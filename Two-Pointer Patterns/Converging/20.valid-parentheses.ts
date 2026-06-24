@@ -7,8 +7,7 @@
 // @lc code=start
 function isValid(s: string): boolean {
   let stack: string[] = [];
-  for (let i = 0; i < s.length; i++) {
-    const char = s[i];
+  for (const char of s) {
     if (char === "(") stack.push(")");
     else if (char === "{") stack.push("}");
     else if (char === "[") stack.push("]");
